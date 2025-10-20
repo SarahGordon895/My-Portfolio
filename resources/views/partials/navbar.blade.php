@@ -13,12 +13,10 @@
             <a href="#service" class="nav-item nav-link">Services</a>
         </div>
         <a href="{{ url('/') }}" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-            <h1 class="text-primary fw-bold m-0">ProMan</h1>
+            <h1 class="text-primary fw-bold m-0">Sarah Gordon</h1>
         </a>
         <div class="navbar-nav me-auto py-0">
             <a href="#project" class="nav-item nav-link">Projects</a>
-        
-            <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
     </div>

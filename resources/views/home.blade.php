@@ -27,11 +27,8 @@
                           
                 <div class="d-flex align-items-center pt-5">
                     <a href="{{ asset('storage/cv/CurriculumnVitae.pdf')}}" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                    <button type="button" class="btn-play" data-bs-toggle="modal"
-                        data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                         <span></span>
                     </button>
-                    <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -58,9 +55,7 @@
                 <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
                 <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
                 <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-            </div>
-
+        <!-- #region -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <!-- ✅ Dynamic Projects Section -->
                 <div class="row g-3 mb-4">
@@ -79,7 +74,7 @@
                 <p class="mb-4">Trusted by many clients as per the past years as a developer, we help companies obtain well Designed and Responsive systems, websites and applications and well maintained computer and company infrastructure. We get positive feedbacks from our customers.</p>
                 <div class="d-flex align-items-center mb-3">
                     <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">4</h2>
+                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">6</h2>
                 </div>
                 <p class="mb-0"></p>
             </div>
@@ -230,9 +225,15 @@
                                 <h6 class="mb-0">Divine Grace Church</h6>
                             </div>
                             <div class="col-sm-6">
-                                <h5>Internship</h5>
+                                <h5>Practical Training</h5>
                                 <hr class="text-primary my-2">
-                                <p class="text-primary mb-1">2025 To current</p>
+                                <p class="text-primary mb-1">August - October 2025</p>
+                                <h6 class="mb-0">iMart Group LTD</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Technical Project Manager</h5>
+                                <hr class="text-primary my-2">
+                                <p class="text-primary mb-1">October To Currently 2025</p>
                                 <h6 class="mb-0">iMart Group LTD</h6>
                             </div>
                         </div>
@@ -244,7 +245,6 @@
 </div>
 <!-- Expertise End -->
 
-
 <!-- Service Start -->
 <div class="container-fluid bg-light my-5 py-6" id="service">
     <div class="container">
@@ -253,20 +253,24 @@
                 <h1 class="display-5 mb-0">My Services</h1>
             </div>
             <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                <!-- Button triggers Hire Me modal -->
+                <a class="btn btn-primary py-3 px-5" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</a>
             </div>
         </div>
+
         <div class="row g-4">
-            <<div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                <div class="bg-icon flex-shrink-0 mb-3">
-                    <i class="fa fa-calculator fa-2x text-dark"></i>
-                </div>
-                <div class="ms-sm-4">
-                    <h4>Computerized Accounting</h4>
-                    <span>Providing accurate and efficient financial management using <b>Tally</b> to record, organize, and analyze accounts. Helping businesses maintain clear records, streamline bookkeeping, and make informed financial decisions.</span>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-calculator fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4>Computerized Accounting</h4>
+                        <span>Providing accurate and efficient financial management using <b>Tally</b> to record, organize, and analyze accounts. Helping businesses maintain clear records, streamline bookkeeping, and make informed financial decisions.</span>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                     <div class="bg-icon flex-shrink-0 mb-3">
@@ -274,10 +278,11 @@
                     </div>
                     <div class="ms-sm-4">
                         <h4 class="mb-3">Graphic Design</h4>
-                        <span>Designing professional graphics, from logos, Flyers, Posters and Color Palettes to marketing materials, to effectively communicate your message.</span>
+                        <span>Designing professional graphics, from logos, flyers, and posters to marketing materials, that effectively communicate your message.</span>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                     <div class="bg-icon flex-shrink-0 mb-3">
@@ -289,6 +294,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
                     <div class="bg-icon flex-shrink-0 mb-3">
@@ -304,9 +310,83 @@
     </div>
 </div>
 <!-- Service End -->
+<!-- Hire Me Modal (Professional Look) -->
+<div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content shadow-lg border-0">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="hireMeModalLabel">Hire Me</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">We’d love to collaborate with you! Please provide your details below and I’ll get back to you promptly.</p>
+  
+          <!-- Laravel form -->
+          @if(session('success'))
+              <div class="alert alert-success">
+                  {{ session('success') }}
+              </div>
+          @endif
+  
+          <form action="{{ route('contact.send') }}" method="POST">
+              @csrf
+              <div class="row g-3">
+                  <!-- Name -->
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
+                          <label for="name">Full Name</label>
+                      </div>
+                  </div>
+  
+                  <!-- Email -->
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="email" name="email" class="form-control" id="email" placeholder="email@example.com" required>
+                          <label for="email">Email Address</label>
+                      </div>
+                  </div>
+  
+                  <!-- Company -->
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="text" name="subject" class="form-control" id="subject" placeholder="Company/Organization">
+                          <label for="subject">Company / Organization</label>
+                      </div>
+                  </div>
+  
+                  <!-- Phone (Optional) -->
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="tel" name="phone" class="form-control" id="phone" placeholder="+255655139724">
+                          <label for="phone">Phone Number (Optional)</label>
+                      </div>
+                  </div>
+  
+                  <!-- Message -->
+                  <div class="col-12">
+                      <div class="form-floating">
+                          <textarea class="form-control" name="message" placeholder="Tell me about your project..." id="message" style="height: 140px" required></textarea>
+                          <label for="message">Message / Project Details</label>
+                      </div>
+                  </div>
+  
+                  <!-- Submit Button -->
+                  <div class="col-12">
+                      <button class="btn btn-primary w-100 py-3 fw-bold" type="submit">
+                          <i class="fa fa-paper-plane me-2"></i> Send Your Inquiry
+                      </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
-<<!-- Projects Start -->
+<!-- Projects Start -->
 <div class="container-xxl py-6 pt-5" id="project">
     <div class="container">
         <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
@@ -402,10 +482,34 @@
                 </div>
             </div>
 
+            <!-- Project 8 (UI/UX Design) -->
+            <div class="col-lg-3 col-md-6 portfolio-item first">
+                <div class="portfolio-img rounded overflow-hidden">
+                    <img class="img-fluid w-100 h-100" src="img/project-7.jpg" alt="Project 8" style="object-fit: cover;">
+                    <div class="portfolio-btn">
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-7.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+<!-- Project 9 (Graphic Design) -->
+<div class="col-lg-3 col-md-6 portfolio-item second" style="margin-bottom: 2rem;">
+    <div class="portfolio-img rounded overflow-hidden" style="height: 250px;">
+        <img class="img-fluid w-100 h-100" src="img/project-8.jpg" alt="Project 9" style="object-fit: cover;">
+        <div class="portfolio-btn">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-8.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
         </div>
     </div>
 </div>
 <!-- Projects End -->
+
 <!-- Contact Start -->
 <div class="container-xxl pb-5" id="contact">
     <div class="container py-5">
@@ -413,10 +517,59 @@
             <div class="col-lg-6">
                 <h1 class="display-5 mb-0">Let's Work Together</h1>
             </div>
-            <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
-            </div>
-        </div>
+           <!-- Say Hello Button -->
+<!-- Hidden Form for Say Hello -->
+<form id="sayHelloForm" action="{{ route('contact.send') }}" method="POST" style="display:none;">
+    @csrf
+    <input type="hidden" name="name" value="Visitor">
+    <input type="hidden" name="email" value="visitor@example.com">
+    <input type="hidden" name="subject" value="Hello">
+    <input type="hidden" name="message" value="Hello!">
+</form>
+
+<!-- Say Hello Button -->
+<div class="text-center mb-4">
+    <button id="sayHelloBtn" class="btn btn-primary py-3 px-5 fw-semibold shadow-sm">
+        Say Hello
+    </button>
+</div>
+
+<!-- Notification -->
+<div id="sayHelloNotification" style="display:none;" class="alert alert-success text-center mt-3" role="alert">
+    Message sent successfully!
+</div>
+
+<script>
+document.getElementById('sayHelloBtn').addEventListener('click', function() {
+    const form = document.getElementById('sayHelloForm');
+    
+    // Submit the hidden form
+    form.submit();
+
+    // Show notification (optional: hide after 3 sec)
+    const notification = document.getElementById('sayHelloNotification');
+    notification.style.display = 'block';
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 3000);
+});
+</script>
+
+<style>
+/* Original Bootstrap primary color button */
+.btn-primary {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+</style>
+
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="mb-2">My office:</p>
@@ -430,10 +583,9 @@
                 <hr class="w-100">
                 <p class="mb-2">Follow me:</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/technova.soln?igsh=MXZqZm80eXkwbjgyZQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/sarah-gordon-0502b335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/share/1DD2SMKQrV/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
             <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
