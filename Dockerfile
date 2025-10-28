@@ -1,8 +1,8 @@
 # Use stable PHP base image
 FROM php:8.2-fpm-bookworm
 
-# Set working directory
-WORKDIR /var/www/html
+# Set working directory (note: Laravel expects /var/www, not /var/www/html)
+WORKDIR /var/www
 
 # Install dependencies (system + PHP extensions + Nginx)
 RUN apt-get update && apt-get install -y \
@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y \
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copy app files
+# Copy all application files
 COPY . .
 
 # Copy Nginx configuration
@@ -33,7 +33,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Install PHP dependencies (Laravel)
 RUN composer install --no-dev --optimize-autoloader
 
-# Ensure writable storage folders
+# Ensure writable storage and cache directories
 RUN chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
 
@@ -43,8 +43,8 @@ RUN php artisan config:clear || true \
     && php artisan view:clear || true \
     && php artisan cache:clear || true
 
-# Expose port 10000 for Render
+# Expose port 10000 (Render expects this)
 EXPOSE 10000
 
 # Start both PHP-FPM and Nginx
-CMD ["sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]
+CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
