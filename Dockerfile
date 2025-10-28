@@ -46,5 +46,5 @@ RUN php artisan config:clear || true \
 # Expose port 10000 for Render
 EXPOSE 10000
 
-# Start PHP-FPM and Nginx together
-CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
+# Start both PHP-FPM and Nginx
+CMD ["sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]
