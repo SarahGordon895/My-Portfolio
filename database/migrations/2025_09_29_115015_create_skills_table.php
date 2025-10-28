@@ -11,10 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('skills', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        // Only create the table if it doesn't already exist
+        if (!Schema::hasTable('skills')) {
+            Schema::create('skills', function (Blueprint $table) {
+                $table->id();
+                $table->string('name'); // example skill name column
+                $table->integer('level')->nullable(); // optional skill level
+                $table->timestamps();
+            });
+        }
     }
 
     /**

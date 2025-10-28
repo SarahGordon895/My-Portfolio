@@ -3,6 +3,12 @@ services:
     name: my-laravel-portfolio
     env: docker
     plan: free
+    dockerfilePath: ./Dockerfile
+      envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
     buildCommand: |
       composer install --optimize-autoloader --no-dev
       php artisan config:cache
