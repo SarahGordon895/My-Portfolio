@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Skill;
 use App\Models\Project;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use App\Mail\ContactMail;
 
 
@@ -32,6 +33,17 @@ class HomeController extends Controller
         Mail::to('gordonsarah2404@gmail.com')->send(new ContactMail($data));
 
         return back()->with('success', 'Message sent successfully!');
+    }
+
+    public function downloadCv()
+    {
+        $cvPath = public_path('cv/CurriculumnVitae.pdf');
+
+        if (!file_exists($cvPath)) {
+            abort(404, 'CV file not found.');
+        }
+
+        return response()->download($cvPath, 'Sarah_Gordon_CV.pdf');
     }
 
 }

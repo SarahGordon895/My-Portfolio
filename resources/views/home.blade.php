@@ -25,14 +25,13 @@
                     @endforeach
                 </div>
                           
-                <div class="d-flex align-items-center pt-5">
-                    <a href="{{ asset('storage/cv/CurriculumnVitae.pdf')}}" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                        <span></span>
-                    </button>
+                <div class="d-flex flex-wrap align-items-center gap-3 pt-5">
+                    <a href="{{ route('cv.download') }}" class="btn btn-primary py-3 px-4">Download CV</a>
+                    <a href="#contact" class="btn btn-outline-primary py-3 px-4">Contact Me</a>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img  style=" width: 50% ; height: 20% ;" class="img-fluid" src="{{ asset('img/profile.png') }}" alt="">
+            <div class="col-lg-6 text-center text-lg-end">
+                <img class="img-fluid w-75 w-md-50" src="{{ asset('img/profile.png') }}" alt="Profile photo">
             </div>
         </div>
     </div>
