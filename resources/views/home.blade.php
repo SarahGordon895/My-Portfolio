@@ -90,7 +90,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h1 class="display-5 mb-5">Skills & Experience</h1>
-                <p class="mb-4">I'm a web developer with expertise in front end development and laravel framework, passionate about building functional, user-friendly, and visually appealing applications. Skilled in HTML, CSS, JavaScript, Visual Basic,PHP, and various frameworks like Laravel, I write clean, maintainable, and scalable code.
+                <p class="mb-4">I'm a full stack developer with expertise in front end development and laravel framework, passionate about building functional, user-friendly, and visually appealing applications. Skilled in HTML, CSS, JavaScript, Visual Basic,PHP, and various frameworks like Laravel, I write clean, maintainable, and scalable code.
 
                     I've worked on multiple projects, designing and implementing responsive solutions that balance user experience and technical efficiency. And i also design and create Flyers, Posters, Logos, and Color Palettes, I focus on delivering seamless solutions.
                     
@@ -116,6 +116,15 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">React</h6>
+                                <h6 class="font-weight-bold">80%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="skill mb-4">
@@ -172,6 +181,24 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">API (RESTFUL) Integration</h6>
+                                <h6 class="font-weight-bold">80%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="font-weight-bold">Technical Project Management</h6>
+                                <h6 class="font-weight-bold">75%</h6>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -290,6 +317,30 @@
                     <div class="ms-sm-4">
                         <h4 class="mb-3">Web Design and Development</h4>
                         <span>Building modern, responsive, and user-friendly websites tailored to your brand and audience.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Full Stack Development</h4>
+                        <span>Building end-to-end web applications from frontend to backend. Expert in creating responsive user interfaces, robust server-side logic, database design, and seamless API integrations for complete web solutions.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div class="bg-icon flex-shrink-0 mb-3">
+                        <i class="fa fa-tasks fa-2x text-dark"></i>
+                    </div>
+                    <div class="ms-sm-4">
+                        <h4 class="mb-3">Technical Project Management</h4>
+                        <span>Leading technical projects from conception to deployment. Coordinating development teams, managing timelines, ensuring quality standards, and bridging the gap between technical requirements and business objectives.</span>
                     </div>
                 </div>
             </div>
@@ -497,6 +548,39 @@
         <img class="img-fluid w-100 h-100" src="img/project-8.jpg" alt="Project 9" style="object-fit: cover;">
         <div class="portfolio-btn">
             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-8.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Logo Design 1 (Graphic Design) -->
+<div class="col-lg-3 col-md-6 portfolio-item second" style="margin-bottom: 2rem;">
+    <div class="portfolio-img rounded overflow-hidden" style="height: 250px;">
+        <img class="img-fluid w-100 h-100" src="img/PHOTO-2026-02-01-11-50-21.jpg" alt="Logo Design 1" style="object-fit: cover;">
+        <div class="portfolio-btn">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/PHOTO-2026-02-01-11-50-21.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Logo Design 2 (Graphic Design) -->
+<div class="col-lg-3 col-md-6 portfolio-item second" style="margin-bottom: 2rem;">
+    <div class="portfolio-img rounded overflow-hidden" style="height: 250px;">
+        <img class="img-fluid w-100 h-100" src="img/PHOTO-2026-02-01-11-50-21 2.jpg" alt="Logo Design 2" style="object-fit: cover;">
+        <div class="portfolio-btn">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/PHOTO-2026-02-01-11-50-21 2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Logo Design 3 (Graphic Design) -->
+<div class="col-lg-3 col-md-6 portfolio-item second" style="margin-bottom: 2rem;">
+    <div class="portfolio-img rounded overflow-hidden" style="height: 250px;">
+        <img class="img-fluid w-100 h-100" src="img/PHOTO-2026-02-01-11-50-21 3.jpg" alt="Logo Design 3" style="object-fit: cover;">
+        <div class="portfolio-btn">
+            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/PHOTO-2026-02-01-11-50-21 3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="#"><i class="fa fa-link"></i></a>
         </div>
     </div>
